@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../Public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- Modal -->
+
+    <div class="modal" id="modal-one" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-header">
+                <h2>Modal in CSS?</h2>
+                <a href="#modal-one" class="btn-close" aria-hidden="true">×</a>
+
+            </div>
+            <div class="modal-body">
+                <p>One modal example here! :D</p>
+            </div>
+            <div class="modal-footer"> <a href="#modal-one" class="btn">Nice!</a>
+
+            </div>
+        </div>
+    </div> 
+
+
+    <div class="container">
+        <div class="register">
+            <h1>Ajouter un nouveau contact</h1>
+            <div class="form">
+                <div>
+                    <label for="prenom">Prenom</label>
+                    <input type="text" required id="prenom" placeholder="Saisir le prenom du contact">
+                </div>
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" required id="nom" placeholder="Saisir le nom du contact">
+                </div>
+                <div>
+                    <label for="categorie">Categorie</label>
+                    <select name="" id="categorie" required>
+                        <option value="1">Categorie 1</option>
+                        <option value="2">Categorie 2</option>
+                        <option value="3">Categorie 3</option>
+                    </select>
+                </div>
+                <div>
+                    <button id="submit" type="button">Ajouter</button>
+                </div>
+
+            </div>
+        </div>
+
+        <main>
+
+            <div class="head-list">
+                <div>
+                    <!-- <label for="filtre">Filtrer la liste des contacts</label> -->
+                    <input type="text" placeholder="Search" id="filtre">
+                </div>
+                <div>
+                    <button type="button" id="btn_delete">Supprimer</button>
+                </div>
+            </div>
+            <div class="list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Prenom</th>
+                            <th>Nom</th>
+                            <th>categorie</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- liste des contacts -->
+                    </tbody>
+
+                </table>
+            </div>
+
+        </main>
+    </div>
+
+    <script type="module" src="../Public/js/main.js"></script>
+</body>
+
+</html>

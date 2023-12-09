@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-size: 1.5rem;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+}
+
+.container .register{
+    width: 70%;
+    height: 20%;
+    border: 0.1rem solid;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .register .form{
+    width: 90%;
+    height: 50%;
+    /* border: 0.1em solid; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container .register .form div{
+    width: 20%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.container .register .form div input{
+    width: 90%;
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    outline-color: blue;
+    
+}
+.container .register .form div select{
+    padding: 0.3em;
+    border-radius: 0.6rem;
+    width: 90%;
+    font-size: 1.3rem;
+    
+}
+.container .register .form div button{
+    padding: 0.5rem;
+    background-color: green;
+    color: white;
+    font-size: 1.3rem;
+    border: 0.1rem solid white;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+main {
+    width: 70%;
+    height: 70%;
+    border:0.1rem solid;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+main div{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    /* border: 0.1rem solid; */
+}
+.head-list{
+    /* height: 20%; */
+    justify-content: center;
+    align-items: end;
+}
+.head-list div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head-list div:first-child input{
+    width: 30%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+.head-list div:last-child button{
+    padding: 0.8rem;
+    background-color: red;
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+}
+
+.list{
+    height: 80%;
+    overflow: scroll;
+}
+
+.list table{
+    width: 90%;
+    height: 100%;
+   
+}
+/* main div table tbody tr {
+    width: auto;
+    height: 1em;
+} */
+.list table tbody tr td{
+    border: 0.1em solid;
+    padding: 0.1rem 0.2rem;
+    /* background-color: red; */
+}
+/* .modal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactDetail{
+
+} */
+
+
+.wrap {
+    padding: 40px;
+    text-align: center;
+}
+hr {
+    clear: both;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 0;
+    border-top: 1px solid #aaaaaa;
+}
+h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+p {
+    margin-bottom: 20px;
+}
+.btn {
+    background: #428bca;
+    border: #357ebd solid 1px;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-align: center;
+    min-width: 60px;
+    position: relative;
+    transition: color .1s ease;
+}
+.btn:hover {
+    background: #357ebd;
+}
+.btn.btn-big {
+    font-size: 18px;
+    padding: 15px 20px;
+    min-width: 100px;
+}
+.btn-close {
+    color: #aaaaaa;
+    font-size: 30px;
+    text-decoration: none;
+    position: absolute;
+    right: 5px;
+    top: 0;
+}
+.btn-close:hover {
+    color: #919191;
+}
+.modal:target:before {
+    display: none;
+}
+.modal:before {
+    content:"";
+    display: block;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+.modal .modal-dialog {
+    background: #fefefe;
+    border: #333333 solid 1px;
+    border-radius: 5px;
+    margin-left: -200px;
+    position: fixed;
+    left: 50%;
+    z-index: 11;
+    width: 360px;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    -moz-transition: -moz-transform 0.3s ease-out;
+    -o-transition: -o-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    top: 20%;
+    position: absolute;
+}
+.modal:target .modal-dialog {
+    top: -100%;
+    -webkit-transform: translate(0, -500%);
+    -ms-transform: translate(0, -500%);
+    transform: translate(0, -500%);
+}
+.modal-body {
+    padding: 20px;
+}
+.modal-header, .modal-footer {
+    padding: 10px 20px;
+}
+.modal-header {
+    border-bottom: #eeeeee solid 1px;
+}
+.modal-header h2 {
+    font-size: 20px;
+}
+.modal-footer {
+    border-top: #eeeeee solid 1px;
+    text-align: right;
+}
